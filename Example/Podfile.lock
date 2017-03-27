@@ -1,0 +1,22 @@
+PODS:
+  - AKUnionPayManager (0.1.0):
+    - AKUnionPaySDK
+  - AKUnionPaySDK (0.1.0)
+
+DEPENDENCIES:
+  - AKUnionPayManager (from `../`)
+  - AKUnionPaySDK (from `../../AKUnionPaySDK`)
+
+EXTERNAL SOURCES:
+  AKUnionPayManager:
+    :path: ../
+  AKUnionPaySDK:
+    :path: ../../AKUnionPaySDK
+
+SPEC CHECKSUMS:
+  AKUnionPayManager: ccfcf21ce610a3806ad56ddc6ff428ca66f70c86
+  AKUnionPaySDK: 99f9ce0476554b0dcf58420fe7a740fba21ac6cc
+
+PODFILE CHECKSUM: 25811feed56afd71dc968a76ec3209589545de0b
+
+COCOAPODS: 1.1.1

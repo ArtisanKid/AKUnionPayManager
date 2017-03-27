@@ -7,6 +7,7 @@
 //
 
 #import "AKAppDelegate.h"
+#import <AKUnionPayManager/AKUnionPayManager.h>
 
 @implementation AKAppDelegate
 
