@@ -51,6 +51,6 @@ TODO: Add long description of the pod here.
 
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '-l "PaymentControl"',
-    'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/../../AKUnionPaySDK/**'
+    'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/AKUnionPaySDK/**'
   }
 end
