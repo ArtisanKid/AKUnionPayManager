@@ -5,18 +5,23 @@ PODS:
 
 DEPENDENCIES:
   - AKUnionPayManager (from `../`)
-  - AKUnionPaySDK (from `../../AKUnionPaySDK`)
+  - AKUnionPaySDK (from `git@github.com:ArtisanKid/AKUnionPaySDK.git`)
 
 EXTERNAL SOURCES:
   AKUnionPayManager:
     :path: ../
   AKUnionPaySDK:
-    :path: ../../AKUnionPaySDK
+    :git: git@github.com:ArtisanKid/AKUnionPaySDK.git
+
+CHECKOUT OPTIONS:
+  AKUnionPaySDK:
+    :commit: 9ee0f6275f8ac4281be08eb07a1ac8e36977db68
+    :git: git@github.com:ArtisanKid/AKUnionPaySDK.git
 
 SPEC CHECKSUMS:
-  AKUnionPayManager: ccfcf21ce610a3806ad56ddc6ff428ca66f70c86
-  AKUnionPaySDK: 99f9ce0476554b0dcf58420fe7a740fba21ac6cc
+  AKUnionPayManager: 20f009bb7a3e28b4b47038e4a2d43f75812e3931
+  AKUnionPaySDK: 628ed11cb72539024e078fb36b2abd1a8bcbfa10
 
-PODFILE CHECKSUM: 25811feed56afd71dc968a76ec3209589545de0b
+PODFILE CHECKSUM: f295dd6fa671dfe8226c270e02ab4d40d7f7d86c
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

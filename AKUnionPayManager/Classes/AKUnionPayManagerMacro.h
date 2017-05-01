@@ -10,7 +10,7 @@
 #define AKUnionPayManagerMacro_h
 
 #if DEBUG
-    #define AKUnionPayManagerLog(_Format, ...) NSLog((@"\n[File:%s]\n[Line:%d]\n[Function:%s]\n" _Format @"\n"), __FILE__, __LINE__, __PRETTY_FUNCTION__, ## __VA_ARGS__);
+    #define AKUnionPayManagerLog(_Format, ...) NSLog((@"\n[File:%s]\n[Line:%d]\n[Function:%s]\n" _Format), __FILE__, __LINE__, __PRETTY_FUNCTION__, ## __VA_ARGS__);printf("\n");
 #else
     #define AKUnionPayManagerLog(_Format, ...)
 #endif

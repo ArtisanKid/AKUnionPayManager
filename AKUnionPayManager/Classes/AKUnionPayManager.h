@@ -39,7 +39,7 @@ typedef void (^AKUnionPayManagerFailure)(NSError *error);
 /**
  支付
  
- @param orderID 订单信息
+ @param order 订单信息
  @param success 成功的Block
  @param failure 失败的Block
  */

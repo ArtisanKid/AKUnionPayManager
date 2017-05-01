@@ -14,11 +14,14 @@ const NSString * const AKUnionPayManagerErrorCodeKey = @"code";
 const NSString * const AKUnionPayManagerErrorMessageKey = @"message";
 const NSString * const AKUnionPayManagerErrorDetailKey = @"detail";
 
-static const NSString * const AKUnionPayManagerResultSuccess = @"suceess";
-static const NSString * const AKUnionPayManagerResultFailure = @"fail";
-static const NSString * const AKUnionPayManagerResultCancel = @"cancel";
+static NSString * const AKUnionPayManagerResultSuccess = @"suceess";
+static NSString * const AKUnionPayManagerResultFailure = @"fail";
+static NSString * const AKUnionPayManagerResultCancel = @"cancel";
 
 @interface AKUnionPayManager ()
+
+@property (nonatomic, assign, getter=isDebug) BOOL debug;
+@property (nonatomic, strong) NSString *scheme;
 
 @property (nonatomic, strong) AKUnionPayManagerSuccess paySuccess;
 @property (nonatomic, strong) AKUnionPayManagerFailure payFailure;
@@ -53,6 +56,22 @@ static const NSString * const AKUnionPayManagerResultCancel = @"cancel";
 }
 
 #pragma mark- Public Method
++ (void)setDebug:(BOOL)debug {
+    self.manager.debug = debug;
+}
+
++ (BOOL)isDebug {
+    return self.manager.isDebug;
+}
+
++ (void)setScheme:(NSString *)scheme {
+    self.manager.scheme = scheme;
+}
+
++ (NSString *)scheme {
+    return self.manager.scheme;
+}
+
 + (BOOL)handleOpenURL:(NSURL *)url {
     __block BOOL handle = YES;
     [[UPPaymentControl defaultControl] handlePaymentResult:url completeBlock:^(NSString *code, NSDictionary *data) {
